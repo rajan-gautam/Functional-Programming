@@ -1,5 +1,7 @@
 package student;
 
+//java
+
 public class Student {
 	private String firstName;
 	private String lastName;
@@ -45,6 +47,12 @@ public void setGrade(double grade_) {grade = grade_;}
 //getName method
  //returns full name
  //
+ @Override
+ public String toString() {
+	 
+	 return  String.format("%-10s %-10s %-10.2f %s", getFirstName(),  getLastName(),  getGrade(),  getDepartment());
+ }
+ 
   public String getName() {
   
  return (firstName + " " + " " + lastName).trim();
